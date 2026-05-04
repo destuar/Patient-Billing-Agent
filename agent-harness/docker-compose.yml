@@ -1,0 +1,14 @@
+services:
+  bill-agent:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      # Mount knowledge docs so they persist and can be updated without rebuild
+      - ../Knowledge Docs:/app/Knowledge Docs:ro
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+    restart: unless-stopped

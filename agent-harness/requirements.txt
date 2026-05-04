@@ -1,0 +1,13 @@
+# Core framework
+sanic>=23.6.0
+openai>=1.0.0
+anthropic>=0.39.0
+
+# RAG / Document processing
+pdfplumber>=0.10.0
+openpyxl>=3.1.0
+
+# Optional: Better search (students can add these)
+# sentence-transformers>=2.0.0
+# chromadb>=0.4.0
+# faiss-cpu>=1.7.0
